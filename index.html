@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-<title>Meri Jaan 💕</title>
+<title>Hey Cutie 💕✨</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
     --bg-deep: #12072B;
@@ -101,16 +101,16 @@
   .glass-card{
     position: relative;
     z-index: 5;
-    background: rgba(28, 10, 56, 0.55);
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
-    border: 1px solid rgba(255,105,180,.35);
+    background: rgba(28, 10, 56, 0.68);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,105,180,.38);
     border-radius: 28px;
-    box-shadow: 0 0 60px rgba(255,105,180,.18), 0 0 0 1px rgba(255,255,255,.03) inset,
-                0 25px 60px rgba(0,0,0,.45);
+    box-shadow: 0 0 60px rgba(255,105,180,.2), 0 0 0 1px rgba(255,255,255,.05) inset,
+                0 25px 60px rgba(0,0,0,.5);
     padding: 44px 32px;
     width: 100%;
-    max-width: 560px;
+    max-width: 580px;
     text-align: center;
     animation: cardIn .7s cubic-bezier(.2,.9,.25,1) both;
   }
@@ -121,34 +121,38 @@
   }
 
   .glow-title{
-    font-family:'Dancing Script', cursive;
-    font-size: clamp(2.4rem, 8vw, 3.6rem);
-    color: var(--white-soft);
-    text-shadow: 0 0 12px rgba(255,105,180,.85), 0 0 30px rgba(230,63,209,.5);
-    margin: 0 0 10px 0;
-    line-height: 1.15;
+    font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.85rem, 6vw, 2.7rem);
+    color: #FFFFFF;
+    letter-spacing: -0.015em;
+    text-shadow: 0 2px 8px rgba(0,0,0,.5), 0 0 25px rgba(255,105,180,.75);
+    margin: 0 0 12px 0;
+    line-height: 1.25;
   }
 
   .subtext{
-    font-weight: 300;
-    color: #E6D6F5;
-    font-size: clamp(.95rem, 3vw, 1.05rem);
-    margin: 0 0 28px 0;
-    opacity: .9;
+    font-weight: 500;
+    color: #EBDCF9;
+    font-size: clamp(.92rem, 2.8vw, 1.05rem);
+    margin: 0 0 24px 0;
+    line-height: 1.6;
+    opacity: .95;
+    text-shadow: 0 1px 3px rgba(0,0,0,.3);
   }
 
   /* ---------- Buttons ---------- */
   .btn{
-    font-family:'Quicksand', sans-serif;
-    font-weight: 600;
-    font-size: 1rem;
+    font-family:'Outfit', 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 1.02rem;
     border: none;
     border-radius: 999px;
-    padding: 16px 38px;
+    padding: 15px 36px;
     cursor: pointer;
     color: #2a0a3d;
     background: linear-gradient(135deg, #FFB6DE, var(--pink) 55%, var(--rose-gold));
-    box-shadow: 0 0 20px rgba(255,105,180,.65), 0 8px 20px rgba(0,0,0,.35);
+    box-shadow: 0 0 22px rgba(255,105,180,.7), 0 8px 20px rgba(0,0,0,.35);
     transition: transform .25s ease, box-shadow .25s ease;
     letter-spacing: .3px;
   }
@@ -160,19 +164,24 @@
 
   .btn-no{
     font-family:'Quicksand', sans-serif;
-    font-weight: 500;
-    font-size: .82rem;
+    font-weight: 600;
+    font-size: .95rem;
     border-radius: 999px;
-    padding: 9px 20px;
+    padding: 13px 26px;
     cursor: pointer;
     color: var(--white-soft);
-    background: rgba(255,255,255,.08);
-    border: 1px solid rgba(255,255,255,.25);
-    transition: left .2s cubic-bezier(.2,.9,.25,1), top .2s cubic-bezier(.2,.9,.25,1), transform .15s ease;
+    background: rgba(255,255,255,.1);
+    border: 1px solid rgba(255,255,255,.3);
+    box-shadow: 0 4px 15px rgba(0,0,0,.25);
+    transition: left .2s cubic-bezier(.2,.9,.25,1), top .2s cubic-bezier(.2,.9,.25,1), transform .15s ease, background .2s ease;
     position: relative;
     z-index: 50;
     user-select: none;
     touch-action: none;
+  }
+  .btn-no:hover{
+    background: rgba(255,105,180,.25);
+    border-color: rgba(255,105,180,.6);
   }
   .btn-no.dodging{
     position: absolute;
@@ -180,14 +189,22 @@
 
   .dodge-counter{
     margin-top: 14px;
-    font-size: .78rem;
+    font-size: .82rem;
+    font-weight: 500;
     color: var(--rose-gold);
-    opacity: .75;
-    min-height: 1.2em;
+    opacity: .9;
+    min-height: 1.3em;
   }
 
   .btn-row{
-    display:flex; gap: 18px; justify-content:center; flex-wrap: wrap; margin-top: 6px;
+    display:flex;
+    gap: 16px;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 6px;
+    position: relative;
+    min-height: 52px;
   }
 
   /* ---------- Screens ---------- */
@@ -221,11 +238,13 @@
     50%{ transform: scale(1.18); }
   }
   .loading-text{
-    font-family:'Dancing Script', cursive;
-    font-size: clamp(1.6rem, 6vw, 2.2rem);
+    font-family:'Outfit', 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.4rem, 5vw, 2rem);
     text-align:center;
     color: var(--white-soft);
-    text-shadow: 0 0 14px rgba(255,105,180,.7);
+    text-shadow: 0 0 16px rgba(255,105,180,.8);
+    margin-bottom: 8px;
   }
   .loading-dots span{
     display:inline-block;
@@ -241,21 +260,22 @@
   /* ---------- Progress bar ---------- */
   .progress-wrap{
     width:100%;
-    margin-bottom: 26px;
+    margin-bottom: 22px;
   }
   .progress-label{
-    font-size: .8rem;
-    letter-spacing: .12em;
+    font-size: .82rem;
+    font-weight: 600;
+    letter-spacing: .1em;
     text-transform: uppercase;
     color: var(--rose-gold);
     margin-bottom: 8px;
-    opacity:.85;
+    opacity:.9;
   }
   .progress-track{
     position: relative;
     height: 8px;
     border-radius: 999px;
-    background: rgba(255,255,255,.12);
+    background: rgba(255,255,255,.14);
     overflow: visible;
   }
   .progress-fill{
@@ -279,24 +299,27 @@
   /* ---------- Letter ---------- */
   .letter-card{
     text-align:left;
-    max-height: 46vh;
+    max-height: 52vh;
     overflow-y:auto;
-    padding-right: 6px;
-    line-height: 1.75;
-    font-weight: 300;
-    color: #F3E4FF;
-    font-size: .98rem;
+    padding-right: 10px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #F8EEFF;
+    font-size: 1.01rem;
   }
   .letter-card::-webkit-scrollbar{ width:6px; }
   .letter-card::-webkit-scrollbar-thumb{ background: rgba(255,105,180,.5); border-radius:10px; }
-  .letter-card p{ margin: 0 0 14px 0; }
+  .letter-card p{ margin: 0 0 16px 0; }
+  .letter-card strong{ color: #FFE4F2; font-weight: 700; }
 
   .footer-note{
     margin-top: 22px;
-    font-family:'Dancing Script', cursive;
-    font-size: 1.4rem;
+    font-family:'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
     color: var(--rose-gold);
-    text-shadow: 0 0 10px rgba(255,105,180,.6);
+    text-shadow: 0 0 12px rgba(255,105,180,.7);
+    letter-spacing: .2px;
   }
 
   /* audio toggle */
@@ -345,65 +368,87 @@
 
   <!-- Screen 1: Loading -->
   <section class="screen active" id="screen-loading">
-    <div>
+    <div style="text-align:center; padding: 0 16px;">
       <svg class="pulse-heart" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-6.7-4.35-9.33-8.2C.86 10.1 1.4 6.6 4.2 5.02 6.4 3.8 9.1 4.4 10.6 6.3L12 8l1.4-1.7c1.5-1.9 4.2-2.5 6.4-1.28 2.8 1.58 3.34 5.08 1.53 7.78C18.7 16.65 12 21 12 21z"/></svg>
-      <p class="loading-text">Preparing something special for you Meri Jaan<span class="loading-dots"><span>.</span><span>.</span><span>.</span></span></p>
+      <p class="loading-text">Preparing something special for you, Cutie... 💕<span class="loading-dots"><span>.</span><span>.</span><span>.</span></span></p>
+      <p class="subtext script" style="margin-top: 8px; font-size: 1.25rem; color: var(--rose-gold); text-shadow: 0 0 12px rgba(255,105,180,.6);">A little surprise, straight from my heart to yours. ✨</p>
     </div>
   </section>
 
   <!-- Screen 2: Welcome -->
   <section class="screen" id="screen-welcome">
     <div class="glass-card">
-      <h1 class="glow-title">Hey Meri Jaan 💕</h1>
-      <p class="subtext">My Sunshine, I want to ask you something special...</p>
+      <h1 class="glow-title">Hey Cutie 💕✨</h1>
+      <p class="subtext" id="welcomeSubtext">My Sunshine, I have something special to ask you... 🥰<br>Something made with a little love, a little craziness,<br>and a whole lot of feelings for you. 💖<br><br>So come closer, Baby... your little surprise is waiting. ✨</p>
       <div class="btn-row">
         <button class="btn" id="startBtn">START ✨</button>
+        <button class="btn-no" id="welcomeNoBtn">No 😜</button>
       </div>
+      <p class="dodge-counter" id="welcomeDodgeCounter"></p>
     </div>
   </section>
 
   <!-- Screen 3: Do you love me -->
   <section class="screen" id="screen-trick">
     <div class="glass-card">
-      <h1 class="glow-title" style="font-size:clamp(2rem,7vw,2.8rem)">Do You Love Me? Meri Jaan 💕</h1>
-      <p class="subtext" id="trickSubtext">Choose wisely! 😉</p>
+      <h1 class="glow-title">Do You Love Me, My Love? 💕🥺</h1>
+      <p class="subtext" id="trickSubtext">Choose wisely, Beautiful... 😉<br>Although my heart already knows your answer. ❤️<br><br>I just want to hear those three magical words from you. 🥰</p>
       <div class="btn-row">
-        <button class="btn" id="yesBtn">Yes Baby ✨</button>
+        <button class="btn" id="yesBtn">Yes, Baby ✨</button>
         <button class="btn-no" id="noBtn">No 😜</button>
       </div>
       <p class="dodge-counter" id="dodgeCounter"></p>
     </div>
   </section>
 
-  <!-- Screen 4: Questions -->
+  <!-- Screen 4: Questions (Our Little Promises) -->
   <section class="screen" id="screen-questions">
     <div class="glass-card">
       <div class="progress-wrap">
-        <div class="progress-label" id="progressLabel">Question 1 of 5</div>
+        <div class="progress-label" id="progressLabel">Our Little Promises • 1 of 5</div>
         <div class="progress-track">
           <div class="progress-fill" id="progressFill" style="width:20%">
             <div class="progress-dot"></div>
           </div>
         </div>
       </div>
-      <h1 class="glow-title" id="qHeader" style="font-size:clamp(1.7rem,6vw,2.3rem)"></h1>
+      <h1 class="glow-title" id="qHeader"></h1>
       <p class="subtext" id="qSubtext"></p>
       <div class="btn-row">
         <button class="btn" id="qBtn"></button>
+        <button class="btn-no" id="qNoBtn">No 😜</button>
       </div>
+      <p class="dodge-counter" id="qDodgeCounter"></p>
     </div>
   </section>
 
-  <!-- Screen 5: Final reveal -->
+  <!-- Screen 5: Final reveal (Love Letter) -->
   <section class="screen" id="screen-final">
     <div class="glass-card">
-      <h1 class="glow-title">My Forever Love 💕</h1>
-      <p class="subtext script" style="font-family:'Dancing Script',cursive;font-size:1.4rem;margin-top:-14px;">~ Meri Jaan ~</p>
+      <h1 class="glow-title">My Forever Love 💕✨</h1>
+      <p class="subtext script" style="font-family:'Dancing Script',cursive;font-size:1.6rem;margin-top:-10px;">~ My Beautiful ~</p>
       <div class="letter-card" id="letterCard">
-        <p>You walked into my life and painted it with the most beautiful colors. Every moment before you feels like a blur, and everything after is crystal clear. You are my greatest blessing, my answered prayer, and the reason I believe in miracles. The world changed the day I found you, and I wouldn't trade a single second of our journey together. Your smile could light up the darkest night, your laugh is my favorite melody, and your care wraps around me like the warmest hug. Every moment with you feels like magic — from the silly conversations to our quiet silence, and I fall deeper in love with you every single day.</p>
-        <p>I promise to love you fiercely, to stand by you through every storm, and to celebrate every sunrise together. My heart is yours — today, tomorrow, and every day that follows. I dream of building a forever with you, filled with adventures, laughter, and a love so deep that even the stars would envy us. You are not just my love — you are my home, my peace, and my entire universe.</p>
+        <p>My Beautiful, sometimes I wonder how one person can become such a huge part of someone's heart. And then I think about you... and somehow, everything makes sense. ❤️</p>
+        <p>You didn't simply walk into my life. You slowly became a part of my everyday happiness. Your smile became one of my favorite things in this world. Your voice became something I could listen to forever. Your little habits, your silly moments, your laughter, even the tiny things you probably don't notice about yourself — somehow, I ended up loving all of them. 🥺💕</p>
+        <p>You make ordinary moments feel special. A simple conversation with you can turn my entire day around. A little smile from you can make everything feel lighter. And sometimes, just knowing that you're there is enough to make my heart feel peaceful.</p>
+        <p>Baby, I don't just love you for the beautiful moments. I love the person you are. I care about your happiness, your dreams, your worries, your little moods, and all the things that make you... you. 💖</p>
+        <p><strong>You became my favorite person without even trying.</strong></p>
+        <p>My Sunshine, I want you to know that you never have to be perfect for me. You don't always have to be happy. You don't always have to be strong. On the days when you're tired, I'll be there. On the days when you're quiet, I'll sit beside you. When you're happy, I'll be the person cheering the loudest for you. And when life feels heavy, I'll remind you that you don't have to carry everything alone. 🫂❤️</p>
+        <p>I want to be there for the little things and the big things. For the random midnight conversations, the uncontrollable laughter, the silly arguments, the unexpected adventures, the quiet moments, the warm hugs, and every beautiful memory waiting for us in the future. ✨</p>
+        <p>I can't promise that life will always be perfect. But I can promise that whenever life gets difficult, I'll want to find my way back to you. I'll keep caring. I'll keep choosing you. I'll keep finding reasons to make you smile.</p>
+        <p>My Love, if I could ask the universe for one thing, it wouldn't be a perfect life. It would simply be more time with you. More mornings. More sunsets. More conversations. More hugs. More laughter. More memories. More of <strong>us</strong>. 💕</p>
+        <p>You are not just someone I love.</p>
+        <p><strong>You are my happiness, my comfort, my safe place, my favorite person, and a beautiful piece of my heart. ❤️</strong></p>
+        <p>And if I ever forget to say it enough, let this little surprise remind you:</p>
+        <p><strong>I choose you.<br>I care about you.<br>I appreciate you.<br>I adore you.<br>And I love you — more than these words could ever explain. 🥺💕</strong></p>
+        <p>Today. Tomorrow. And every beautiful day that comes after.</p>
+        <p><strong>My heart will always have a special place for you. ❤️</strong></p>
+        <div style="margin-top:22px; text-align:right;">
+          <p class="script" style="font-family:'Dancing Script',cursive; font-size:1.5rem; color:var(--rose-gold); margin:0;">Forever Yours,</p>
+          <p style="font-family:'Outfit',sans-serif; font-size:1.25rem; font-weight:700; color:#FFFFFF; margin:4px 0 0 0;">My Heart ❤️</p>
+        </div>
       </div>
-      <p class="footer-note">Made With Endless Love 💖</p>
+      <p class="footer-note">Made With Endless Love, Just For You 💖✨</p>
     </div>
   </section>
 
@@ -564,123 +609,199 @@
     screens[name].classList.add('active');
   }
 
-  setTimeout(()=> goTo('welcome'), 2500);
+  setTimeout(()=> goTo('welcome'), 2800);
 
   document.getElementById('startBtn').addEventListener('click', ()=>{
     goTo('trick');
   });
 
-  /* ---------- Dodging "No" button (Card-Bounded & Uncatchable) ---------- */
-  const noBtn = document.getElementById('noBtn');
-  const trickCard = document.querySelector('#screen-trick .glass-card');
-  const trickSubtext = document.getElementById('trickSubtext');
-  const dodgeCounter = document.getElementById('dodgeCounter');
-  const yesBtnEl = document.getElementById('yesBtn');
-  const dodgeMessages = [
-    "You can never click No! Just say Yes! 💖",
-    "Nice try! 😉 No chance!",
-    "Nope, not letting you click that! 💕",
-    "Catch me if you can! ✨ Just say Yes!",
-    "Still trying? 😂 Just click Yes Baby!",
-    "There is no 'No' for us! 🥰",
-    "Hawww! No is not an option! 😜💕"
-  ];
-  let dodgeCount = 0;
-
+  /* ---------- Generic Dodging Button Helper ---------- */
   function rectsOverlap(a, b, pad){
     return !(a.right + pad < b.left || a.left - pad > b.right ||
              a.bottom + pad < b.top || a.top - pad > b.bottom);
   }
 
-  function dodge(e){
-    if(e) {
-      e.preventDefault();
-      e.stopPropagation();
+  function createDodger({ btn, card, avoidBtn, messageEl, counterEl, messages }){
+    let dodgeCount = 0;
+
+    function reset(){
+      btn.classList.remove('dodging');
+      btn.style.left = '';
+      btn.style.top = '';
+      dodgeCount = 0;
+      if(counterEl) counterEl.textContent = '';
     }
-    noBtn.classList.add('dodging');
-    const btnW = noBtn.offsetWidth || 80;
-    const btnH = noBtn.offsetHeight || 36;
-    const pad = 16;
 
-    const cardW = trickCard.clientWidth;
-    const cardH = trickCard.clientHeight;
+    function dodge(e){
+      if(e){
+        e.preventDefault();
+        e.stopPropagation();
+      }
+      btn.classList.add('dodging');
+      const btnW = btn.offsetWidth || 80;
+      const btnH = btn.offsetHeight || 36;
+      const pad = 16;
 
-    const minX = pad;
-    const maxX = Math.max(cardW - btnW - pad, pad);
-    const minY = pad;
-    const maxY = Math.max(cardH - btnH - pad, pad);
+      const cardW = card.clientWidth;
+      const cardH = card.clientHeight;
 
-    const avoidRect = {
-      left: yesBtnEl.offsetLeft,
-      right: yesBtnEl.offsetLeft + yesBtnEl.offsetWidth,
-      top: yesBtnEl.offsetTop,
-      bottom: yesBtnEl.offsetTop + yesBtnEl.offsetHeight
-    };
+      const minX = pad;
+      const maxX = Math.max(cardW - btnW - pad, pad);
+      const minY = pad;
+      const maxY = Math.max(cardH - btnH - pad, pad);
 
-    let newX, newY, candidate, tries = 0;
-    do{
-      newX = rand(minX, maxX);
-      newY = rand(minY, maxY);
-      candidate = { left: newX, right: newX + btnW, top: newY, bottom: newY + btnH };
-      tries++;
-    } while (rectsOverlap(candidate, avoidRect, 16) && tries < 30);
+      const avoidRect = avoidBtn ? {
+        left: avoidBtn.offsetLeft,
+        right: avoidBtn.offsetLeft + avoidBtn.offsetWidth,
+        top: avoidBtn.offsetTop,
+        bottom: avoidBtn.offsetTop + avoidBtn.offsetHeight
+      } : null;
 
-    noBtn.style.left = newX + 'px';
-    noBtn.style.top = newY + 'px';
-    dodgeCount++;
-    trickSubtext.textContent = dodgeMessages[dodgeCount % dodgeMessages.length];
-    dodgeCounter.textContent = `The No button ran away ${dodgeCount} time${dodgeCount === 1 ? '' : 's'} 🏃💨`;
+      let newX, newY, candidate, tries = 0;
+      do{
+        newX = rand(minX, maxX);
+        newY = rand(minY, maxY);
+        candidate = { left: newX, right: newX + btnW, top: newY, bottom: newY + btnH };
+        tries++;
+      } while (avoidRect && rectsOverlap(candidate, avoidRect, 16) && tries < 35);
+
+      btn.style.left = newX + 'px';
+      btn.style.top = newY + 'px';
+      dodgeCount++;
+
+      if(messageEl && messages && messages.length){
+        messageEl.innerHTML = messages[dodgeCount % messages.length];
+      }
+      if(counterEl){
+        counterEl.textContent = `The No button ran away ${dodgeCount} time${dodgeCount === 1 ? '' : 's'} 🏃💨`;
+      }
+    }
+
+    btn.addEventListener('mouseenter', dodge);
+    btn.addEventListener('mouseover', dodge);
+    btn.addEventListener('pointerenter', dodge);
+    btn.addEventListener('pointerdown', dodge);
+    btn.addEventListener('touchstart', dodge, {passive:false});
+    btn.addEventListener('click', dodge);
+
+    return { dodge, reset };
   }
 
+  /* ---------- Welcome Screen Dodging No ---------- */
+  createDodger({
+    btn: document.getElementById('welcomeNoBtn'),
+    card: document.querySelector('#screen-welcome .glass-card'),
+    avoidBtn: document.getElementById('startBtn'),
+    messageEl: document.getElementById('welcomeSubtext'),
+    counterEl: document.getElementById('welcomeDodgeCounter'),
+    messages: [
+      "You can't say No before we even start, Cutie! 😜💕",
+      "Hey Baby, don't run away from me! 🥺💖",
+      "My Sunshine, your surprise is waiting! ☀️✨",
+      "No running away, Beautiful! Click START! 😉💕",
+      "Hehe, I know you're curious, My Love! 🥰",
+      "Come on, Cutie... just one little click! 💖"
+    ]
+  });
+
+  /* ---------- Trick Screen Dodging No ---------- */
+  const trickSubtext = document.getElementById('trickSubtext');
+  createDodger({
+    btn: document.getElementById('noBtn'),
+    card: document.querySelector('#screen-trick .glass-card'),
+    avoidBtn: document.getElementById('yesBtn'),
+    messageEl: trickSubtext,
+    counterEl: document.getElementById('dodgeCounter'),
+    messages: [
+      "Nice try, Cutie... but my heart only accepts YES! 💕",
+      "Nope, Beautiful! I'm not letting you break my heart that easily. 🥺❤️",
+      "You can run, Baby... but you can't escape my love! 😜💕",
+      "Catch me if you can, Sunshine! ☀️✨",
+      "Still trying to click No? 😂 My Heart says NO to your No! 💖",
+      "There is no “No” when it comes to us, My Love. 🥰",
+      "Hawww, Beautiful! We both know you want to say Yes! 😜💕"
+    ]
+  });
+
   function triggerYesFlow(){
-    burstConfetti(140);
-    trickSubtext.textContent = "I Knew It! You made me the happiest! ✨";
+    burstConfetti(150);
+    trickSubtext.innerHTML = "I KNEW IT! 🥹💕<br><br>You just made my heart the happiest heart in the world. ❤️<br>Come here, Baby... I owe you the biggest hug ever! 🫂✨<br><br><strong style='color:#FFE4F2;font-size:1.1rem;'>I love you, Cutie. More than you know. 💖</strong>";
     setTimeout(()=>{
       startQuestions();
       goTo('questions');
-    }, 1100);
+    }, 2400);
   }
-
-  // Ensure 'No' button can NEVER be clicked or caught, constantly dodging inside card
-  noBtn.addEventListener('mouseenter', dodge);
-  noBtn.addEventListener('mouseover', dodge);
-  noBtn.addEventListener('pointerenter', dodge);
-  noBtn.addEventListener('pointerdown', dodge);
-  noBtn.addEventListener('touchstart', dodge, {passive:false});
-  noBtn.addEventListener('click', (e)=>{
-    dodge(e);
-  });
 
   document.getElementById('yesBtn').addEventListener('click', ()=>{
     triggerYesFlow();
   });
 
-  /* ---------- Questions flow ---------- */
+  /* ---------- Questions flow (Our Little Promises) ---------- */
   const questions = [
-    { header: "Will you stay forever with me, Meri Jaan? 💕", sub: "", btn: "Yes Forever 💖" },
-    { header: "Can we create beautiful memories together? ✨", sub: "", btn: "Always Together 💕" },
-    { header: "Will you always smile for me, My Sunshine? 💖", sub: "Your smile is my world!", btn: "Always smiling! 🥰" },
-    { header: "Can you promise to never leave me alone? 💕", sub: "", btn: "I promise! 💖" },
-    { header: "Are you ready for unlimited love and cuddles? 💖", sub: "Unlimited hugs & kisses", btn: "Always ready! 🥰" }
+    {
+      header: "Will you stay by my side forever, Beautiful? 💕🥺",
+      sub: "Through the happiest days, the difficult days, and every little moment in between... will you keep choosing us, just like I'll keep choosing you? ❤️",
+      btn: "Yes, Forever 💖"
+    },
+    {
+      header: "Can we create a lifetime of beautiful memories together, Baby? 💕✨",
+      sub: "Late-night conversations, silly laughs, random adventures, little surprises, warm hugs, and moments we'll remember forever. 🥰",
+      btn: "Always Together 💕"
+    },
+    {
+      header: "Will you always keep smiling for me, Sunshine? 💖",
+      sub: "Because your smile isn't just beautiful... it has this magical way of making my entire world brighter. ☀️🥺<br><br>So please keep smiling, Beautiful. Your smile means more to me than you know. ❤️",
+      btn: "Always Smiling 🥰"
+    },
+    {
+      header: "Can you promise to never let my heart feel alone, My Love? 💕🥺",
+      sub: "I don't need a perfect life. I just want you beside me through whatever life brings us.<br><br>When you're happy, I'll celebrate with you. When you're tired, I'll be there for you. When life gets hard, we'll face it together. ❤️",
+      btn: "I Promise! 💖"
+    },
+    {
+      header: "Are you ready for a lifetime of love & cuddles with me, Cutie? 🥰💕",
+      sub: "Unlimited hugs. 🤗 Endless laughter. 😂 Random kisses. 💋 Late-night talks. 🌙 Little surprises. 🎁 And a lifetime of saying, <strong>“I love you.”</strong> ❤️",
+      btn: "Always Ready! 🥰"
+    }
   ];
   let qIndex = 0;
 
   const qHeader = document.getElementById('qHeader');
   const qSubtext = document.getElementById('qSubtext');
   const qBtn = document.getElementById('qBtn');
+  const qNoBtn = document.getElementById('qNoBtn');
+  const qDodgeCounter = document.getElementById('qDodgeCounter');
   const progressFill = document.getElementById('progressFill');
   const progressLabel = document.getElementById('progressLabel');
   const glassCardQ = document.querySelector('#screen-questions .glass-card');
 
+  const questionDodger = createDodger({
+    btn: qNoBtn,
+    card: glassCardQ,
+    avoidBtn: qBtn,
+    messageEl: qSubtext,
+    counterEl: qDodgeCounter,
+    messages: [
+      "No is not allowed here, Cutie! 😉💕",
+      "Beautiful, there's only one answer my heart wants. 🥺❤️",
+      "Hehe, nice try Baby... but I'm choosing YES! 😜",
+      "You really thought you could escape me? 😂💕",
+      "My Sunshine, there's no escape from forever! ☀️💖",
+      "My Heart has already made its choice... and it chose you. ❤️",
+      "Come on, My Love... say YES and let's keep going. 🥰"
+    ]
+  });
+
   function renderQuestion(){
+    questionDodger.reset();
     const q = questions[qIndex];
-    qHeader.textContent = q.header;
-    qSubtext.textContent = q.sub;
+    qHeader.innerHTML = q.header;
+    qSubtext.innerHTML = q.sub;
     qSubtext.style.display = q.sub ? 'block' : 'none';
     qBtn.textContent = q.btn;
     const pct = ((qIndex+1)/questions.length)*100;
     progressFill.style.width = pct + '%';
-    progressLabel.textContent = `Question ${qIndex+1} of ${questions.length}`;
+    progressLabel.textContent = `Our Little Promises • ${qIndex+1} of ${questions.length}`;
     glassCardQ.style.animation = 'none';
     void glassCardQ.offsetWidth;
     glassCardQ.style.animation = 'cardIn .6s cubic-bezier(.2,.9,.25,1) both';
@@ -727,3 +848,4 @@
 
 </body>
 </html>
+
